@@ -1,15 +1,279 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My E-Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanmay P | Engineering Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p>Hello</p>
-    <h1>Thanmay p</h1>
-    <p>SRN: R25EQ104</p>
-    <p>Branch: ISE B</p>
-    <p>College: REVA University</p>
-    <p>Email:thanmayappu@gmail.com</p>
-    <p>college Email:ugcet2502454@reva.edu.in</p>
+
+  <!-- PAGE PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-wrap">
+      <div class="spinner"></div>
+      <div class="initials-logo">TP</div>
+    </div>
+    <p>Initializing Environment...</p>
+  </div>
+
+  <!-- INTERACTIVE BACKGROUND CANVAS -->
+  <canvas id="ambientCanvas"></canvas>
+  <div class="custom-mouse-pointer"></div>
+
+  <!-- READING PROGRESS FILL -->
+  <div class="indicator-bar" id="readingProgress"></div>
+
+  <!-- APPLICATION HEADER -->
+  <header class="app-header">
+    <a href="#intro" class="site-logo">
+      TP<span>.</span>
+    </a>
+
+    <nav class="pill-navigation">
+      <a href="#bio">About</a>
+      <a href="#timeline">Education</a>
+      <a href="#expertise">Skills</a>
+      <a href="#connect">Contact</a>
+    </nav>
+
+    <div class="header-widgets">
+      <span class="status-badge">
+        <span class="pulse-dot"></span>
+        Open to Projects
+      </span>
+      <a href="mailto:thanmayappu@gmail.com" class="action-trigger">
+        Get In Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- WORKSPACE SHELL -->
+  <main class="workspace-wrapper">
+
+    <!-- INTRO / HERO SECTION -->
+    <section class="intro-view segment" id="intro">
+      <!-- DYNAMIC BG ELEMENTS -->
+      <div class="mesh-gradient element-1"></div>
+      <div class="mesh-gradient element-2"></div>
+
+      <div class="intro-headline-block">
+        <p class="section-tagline">
+          Next-Gen Engineering & Web Architecture
+        </p>
+
+        <h1>
+          Engineering Smart
+          <span class="text-gradient">Digital Systems</span>
+        </h1>
+
+        <p class="sub-paragraph">
+          B.Tech student focused on building robust code structures, exploring innovative web interfaces, and blending design with computational logic.
+        </p>
+
+        <div class="interactive-triggers">
+          <a href="#bio" class="action-btn core-fill">
+            View Experience
+          </a>
+          <a href="#connect" class="action-btn outline-mode">
+            Let's Talk
+          </a>
+        </div>
+
+        <div class="professional-networks">
+          <a href="https://www.linkedin.com/in/vaibhav-p-649952411" target="_blank" class="network-link">
+            Connect via LinkedIn →
+          </a>
+        </div>
+      </div>
+
+      <!-- SYSTEM DASHBOARD GRAPHIC -->
+      <div class="system-monitor-panel">
+        <div class="panel-glow-layer"></div>
+        
+        <div class="panel-header-strip">
+          <div class="window-controls">
+            <span></span><span></span><span></span>
+          </div>
+          <p class="panel-title">console.thanmay.p</p>
+        </div>
+
+        <div class="terminal-editor-box">
+<pre>
+const engineer = {
+  identity: "Thanmay P",
+  discipline: "B.Tech Student",
+  focus: ["Web Tech", "System Logic"],
+  engine: "V8 / Modern Browsers"
+};
+</pre>
+        </div>
+
+        <div class="status-grid-item">
+          <span class="label">Core Engine Stack</span>
+        </div>
+
+        <div class="analytics-chart-box">
+          <span class="label">Activity Metrics</span>
+          <div class="bar-chart-visual">
+            <span class="graph-pillar" style="--height-factor:85%"></span>
+            <span class="graph-pillar" style="--height-factor:60%"></span>
+            <span class="graph-pillar" style="--height-factor:95%"></span>
+            <span class="graph-pillar" style="--height-factor:40%"></span>
+            <span class="graph-pillar" style="--height-factor:75%"></span>
+          </div>
+        </div>
+
+        <div class="badge-overlay">
+          SYSTEM ONLINE
+        </div>
+      </div>
+    </section>
+
+    <!-- BIOGRAPHY / ABOUT -->
+    <section class="biography-view segment" id="bio">
+      <div class="segment-title-block">
+        <p class="section-tagline">Background Check</p>
+        <h2>Driven by logic, crafted with passion.</h2>
+      </div>
+
+      <div class="split-layout-grid">
+        <article class="avatar-display glass-card">
+          <div class="avatar-frame">
+            <img src="assets/thanmay-profile.jpg" alt="Thanmay P Photo">
+          </div>
+          <h3>Thanmay P</h3>
+          <p class="title-sub text-gradient">Engineering Professional</p>
+          <a href="mailto:thanmayappu@gmail.com" class="profile-email-link">
+            thanmayappu@gmail.com
+          </a>
+        </article>
+
+        <article class="narrative-display glass-card">
+          <p class="main-narrative">
+            I am a forward-thinking engineering student deeply interested in modern technology frameworks, computational engineering, and creating responsive web environments. 
+          </p>
+          <p class="secondary-narrative">
+            My journey revolves around continuous upskilling, mastering advanced toolsets, collaborating across diverse team environments, and engineering clean, user-centric interfaces.
+          </p>
+
+          <div class="metric-summary-row">
+            <div class="metric-node">
+              <span class="counter-num">3+</span>
+              <span class="counter-label">Core Projects</span>
+            </div>
+            <div class="metric-node">
+              <span class="counter-num">12+</span>
+              <span class="counter-label">Tech Competencies</span>
+            </div>
+            <div class="metric-node">
+              <span class="counter-num">4+</span>
+              <span class="counter-label">Credentials</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACADEMIC CHRONOLOGY / EDUCATION -->
+    <section class="chronology-view segment" id="timeline">
+      <div class="segment-title-block">
+        <p class="section-tagline">Milestones</p>
+        <h2>Academic Progress</h2>
+      </div>
+
+      <div class="vertical-roadmap">
+        <article class="roadmap-node">
+          <div class="time-stamp">2022</div>
+          <div class="node-content">
+            <h3>Presidency Public School</h3>
+            <p class="degree-type">10th Standard</p>
+          </div>
+        </article>
+
+        <article class="roadmap-node">
+          <div class="time-stamp">2024</div>
+          <div class="node-content">
+            <h3>Presidency PU College</h3>
+            <p class="degree-type">Pre-University Course (PUC)</p>
+          </div>
+        </article>
+
+        <article class="roadmap-node">
+          <div class="time-stamp">2025 - 2029</div>
+          <div class="node-content">
+            <h3>REVA University</h3>
+            <p class="degree-type">Bachelor of Technology (B.Tech)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COMMUNICATIONS / CONTACT -->
+    <section class="communications-view segment" id="connect">
+      <div class="interactive-contact-card">
+        <div class="textual-column">
+          <p class="section-tagline">Communication Hub</p>
+          <h2>Initiate A Connection</h2>
+
+          <div class="terminal-output-simulator">
+            <p class="term-line"><span class="prompt-symbol">&gt;</span> active_status: true</p>
+            <p class="term-line"><span class="prompt-symbol">&gt;</span> connection_node: thanmayappu@gmail.com</p>
+          </div>
+
+          <div class="fast-comms-channels">
+            <button class="phone-reveal-widget">
+              +91 9113640129
+            </button>
+            <a href="mailto:thanmayappu@gmail.com" class="direct-mail-btn">
+              Direct Mail
+            </a>
+            <a href="https://www.linkedin.com/in/vaibhav-p-649952411" target="_blank" class="external-profile-link">
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-submittal-form">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea placeholder="Outline your project or message..." required></textarea>
+          <button type="submit" class="action-btn core-fill Form-submit-trigger">
+            Transmit Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER SIGN-OFF -->
+    <footer class="global-sign-off">
+      <span class="background-text-watermark">
+        THANMAY
+      </span>
+
+      <a href="mailto:thanmayappu@gmail.com" class="large-footer-cta">
+        Let's Start Building Together
+      </a>
+
+      <div class="footer-social-indexes">
+        <a href="https://www.linkedin.com/in/vaibhav-p-649952411" target="_blank" class="social-icon-box">
+          LN
+        </a>
+      </div>
+
+      <p class="legal-attribution">
+        &copy; 2026 Thanmay P. Engineered using semantic HTML5, CSS layout layers, and Vanilla JS architecture.
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
