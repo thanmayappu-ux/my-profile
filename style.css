@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Plus Jakarta Sans',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    line-height:1.6;
+    padding:40px;
+}
+
+a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+.segment{
+    margin:80px 0;
+}
+
+.app-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px
